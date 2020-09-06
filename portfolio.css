@@ -5,9 +5,7 @@ body{
  margin:0px;
  padding:0px;
 }
-ul{
- list-style:none;
-}
+
 a{
  text-decoration:none;
 }
@@ -24,27 +22,29 @@ nav {
  justify-content: space-between;
  align-items:center;
  height:60px;
- background-color:#ffffff;
+ 
  box-shadow:2px 2px 12px rgba(0,0,0,0.2);
  padding:0px 5%;
  
 }
-nav ul{
- display: flex;
+
+
+.nav-links{
+    display: contents;
+    float: right;
+    left: 60%;
+    
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
 }
- 
- 
-nav ul li a{
- margin:30px;
- font-family:myriad pro regular;
- color:#505050;
- font-size: 15px;
- font-weight:700;
+.nav-links a{
+    color: white;
 }
 .logo{
  font-family:RoadTest;
  color:#000000;
- font-size: 22px;
+ width: 50px;
+ margin-top: 10px;
 }
 .active{
  color:#2d2a2a;
@@ -60,20 +60,20 @@ nav ul li a{
 .text-container p:nth-child(1){
  font-family: calibri;
  font-weight:bold;
- color:#6d6d6d;
+ color:white;
  font-size:22px;
 }
 .text-container p:nth-child(2){
  font-family:calibri;
  font-weight:bold;
  letter-spacing:1px;
- color:#1a1a1a;
+ color:white;
  font-size:60px;
  
 }
 .text-container p:nth-child(3){
  font-family: myriad pro regular;
- color: #403e3e;
+ color:white;
  font-size:30px;
  line-height:30px;
 }
@@ -88,6 +88,8 @@ nav ul li a{
  border-radius:10px;
  font-family:calibri;
  font-weight:bold;
+ color:white;
+ border-color: white;
  font-size: 14px;
  outline:none;
  margin:0px 10px;
@@ -100,7 +102,7 @@ nav ul li a{
  transform:translate(-13%,-42%);
 }
 .hire-btn{
- border:2px solid #373636;
+ border:2px solid white;
  color:#373636;
  background-color:transparent;
  
@@ -116,7 +118,7 @@ button:active{
 .about-container{
  width:80%;
  height:330px;
- background:#ffffff;
+ background-image: url('spaceship.jpg');  
  border-radius:20px;
  box-shadow:2px 2px 12px rgba(0,0,0,0.2);
  display: flex;
@@ -178,9 +180,10 @@ button:active{
  font-size: 15px;
  line-height: 5px;
 }
-.services-text p:nth-child(3){font-family:calibri;
+.services-text p:nth-child(3){
+font-family:calibri;
 color:#7e7d7d;
-font-size: ;}
+}
 .services-text{
  width: 500px;
  margin:50px 0px;
@@ -194,24 +197,28 @@ font-size: ;}
  height:320px;
  background-repeat: no-repeat;
  background-size: cover;
- box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+ border-radius: 5px;
  align-items: center;
  justify-content: center;
  display: flex;
  flex-direction: column;
  margin: 0px 4px;
- 
+ border: 10px solid black;
  
 }
  
 .box-1{
- background-image:url("../images/services-1.png");
+ background-image:url("lappy.jpg");
+ 
+}
+.box-1 img{
+    opacity: 5%;
 }
 .box-2{
- background-image:url("../images/services-2.png");
+ background-image:url("speaker.png");
 }
 .box-3{
- background-image: url("../images/servies-3.png");
+ background-image: url("excel.png");
 }
 .box-1 span,
 .box-2 span,
@@ -219,7 +226,7 @@ font-size: ;}
  width:40px;
  height:40px;
  border-radius:50%;
- background-color:#ffffff;
+ color: white;
  display: flex;
  justify-content: center;
  align-items:center;
@@ -238,7 +245,7 @@ font-size: ;}
 .box-2 p:nth-child(3),
 .box-3 p:nth-child(3){
  font-family: calibri;
- color:#8F8F8F;
+ color: black;
  text-align:center;
  width: 230px;
  margin:0px 0px 20px 0px;
